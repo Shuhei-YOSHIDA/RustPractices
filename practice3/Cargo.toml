@@ -1,0 +1,8 @@
+[package]
+name = "practice3"
+version = "0.1.0"
+authors = ["Shuhei_YOSHIDA <s-yoshida@frontier.hokudai.ac.jp>"]
+edition = "2018"
+
+[dependencies]
+nalgebra = "0.18"
