@@ -7,6 +7,11 @@ fn bar<'a> (x: &'a i32) {
 
 }
 
+// generics, traits
+fn hoge<T: std::fmt::Display+std::f64::sin>(x: T) {
+    println!("{}", x.sin());
+}
+
 fn main() {
     println!("Hello, world!");
 
@@ -20,4 +25,9 @@ fn main() {
 
     // ライフタイム
 
+    // generics
+    //let i : i32 = 1;
+    let f : f64 = 10.;
+    //hoge(i);
+    hoge(f);
 }
