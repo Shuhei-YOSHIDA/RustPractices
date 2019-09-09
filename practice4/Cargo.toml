@@ -1,0 +1,12 @@
+[package]
+name = "practice4"
+version = "0.1.0"
+authors = ["Shuhei_YOSHIDA <s-yoshida@frontier.hokudai.ac.jp>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kiss3d = "0.19"
+nalgebra = "0.18"
+image = "0.21"
