@@ -52,6 +52,7 @@ struct FooBuilder {
     //n : Vec<Neko>,
 }
 
+// not worked
 impl FooBuilder {
     fn new() -> Self {
         Self {x : 0,
@@ -111,17 +112,22 @@ fn main() {
     hoge(f);
 
     // Struct, Builder pattern
+    let mut neko = Neko {a: "nekko".to_string()};
+    println!("{}", neko.a);
+    neko.a = "innu".to_string();
+    println!("{}", neko.a);
+
 //    let neko1 = Neko {a: "NEKO1".to_string()};
 //    let neko2 = Neko {a: "NEKO2".to_string()};
-    let foo = FooBuilder::new().x(10)
-                               .y(vec![111., 222., 333.])
-                               .z("FOO".to_string())
-                               //.n(vec![Neko {a : "NEKO1".to_string()},
-                               //        Neko {a : "NEKO2".to_string()},])
-                               .spawn();
-    let x = foo.x();
-    let y = foo.y();
-    let z = foo.z();
+//    let foo = FooBuilder::new().x(10)
+//                               .y(vec![111., 222., 333.])
+//                               //.z("FOO".to_string())
+//                               //.n(vec![Neko {a : "NEKO1".to_string()},
+//                               //        Neko {a : "NEKO2".to_string()},])
+//                               .spawn();
+    //let x = foo.x();
+    //let y = foo.y();
+    //let z = foo.z();
     //let n = foo.n();
 
 }
